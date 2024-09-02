@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Eyad Adel Fageera" />
+    <meta name="description" content="CPIT405 in-class activity 2." />
+    <title>CPIT405-When2Meet clone</title>
+</head>
+
+<body>
+    <header>
+        <h1>When2Meet</h1>
+        <nav>
+            <ul>
+                <li><a href="#ce">Create Event</a></li>
+                <li><a href="#sa">Select Availability</a></li>
+                <li><a href="#vr">View Results</a></li>
+                <li><a href="#su">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="ce">Create Event</h2>
+        <form>
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName">
+            <label for="eventDescription">Event Description:</label>
+            <textarea id="eventDescription" name="eventDescription"></textarea><br><br>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate">
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate">
+            <label for="timeIncrement">Time Increment:</label>
+            <select id="timeIncrement" name="timeIncrement">
+                <option value="15">15 minutes</option>
+            </select>
+            <input type="submit" value="Create Event">
+        </form>
+
+        <h2 id="sa">Input Availability</h2>
+        <form>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+            <input type="button" value="Submit Availability">
+        </form>
+
+        <h2 id="vr">View Results</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>3 available</td>
+                <td>2 available</td>
+                <td>4 available</td>
+                <td>1 available</td>
+                <td>5 available</td>
+            </tr>
+        </table>
+        <p>Shareable Link: <a href="#">https://when2meet.com/event?id=123456</a></p>
+
+        <h2 id="su">Sign up</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="Sign up">
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 WhenToMeet. All rights reserved.
+    </footer>
+</body>
+</html>
